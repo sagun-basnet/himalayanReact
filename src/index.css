@@ -1,0 +1,5 @@
+@import "tailwindcss";
+
+li {
+  @apply p-2 m-4 border;
+}
