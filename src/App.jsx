@@ -53,16 +53,6 @@ const App = () => {
         ]
       },
       {
-        path: '/dashboard',
-        element: <Dashboard />,
-        children: [
-          {
-            path: '/dashboard/user',
-            element: <User />
-          }
-        ]
-      },
-      {
         path: '/login',
         element: <Login />,
       },
