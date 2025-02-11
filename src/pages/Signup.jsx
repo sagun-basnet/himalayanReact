@@ -12,17 +12,16 @@ const Signup = () => {
     )
 
     const handleChange = (e) => {
-        console.log(e, "Event");
-        setValue({
-            ...value,
-            [e.target.name]: e.target.value
-        })
-        console.log(value);
+        setValue({ ...value, [e.target.name]: e.target.value })
+        // console.log(value);
     }
 
     const handleSubmit = (e) => {
         e.preventDefault();
         console.log(value);
+        axios.post('https://jsonplaceholder.typicode.com/posts', value)
+
+
         setValue(init)
         // console.log(e);
 

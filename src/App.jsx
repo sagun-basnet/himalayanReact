@@ -8,6 +8,7 @@ import Contact from './pages/Contact'
 import Signup from './pages/Signup'
 import Login from './pages/Login'
 import PageNotFound from './pages/PageNotFound'
+import ApiFetch from './pages/ApiFetch';
 // import Admin from './pages/Admin'
 // import Dashboard from './pages/Dashboard'
 
@@ -59,6 +60,10 @@ const App = () => {
       {
         path: '/signup',
         element: <Signup />,
+      },
+      {
+        path: '/apifetch',
+        element: <ApiFetch />,
       },
     ]
   )
